@@ -64,7 +64,7 @@
               })
             });
 
-            const data = await reponse.json();
+            const data = await response.json();
             if(response.ok) {
               this.loggedIn = true;
               this.username = data.user.username;
