@@ -68,7 +68,9 @@
             if(response.ok) {
               const role = data.user.role;
               if (role === 'owner') {
-                win
+                window.location.href = 'owner-dashboard.html';
+              } else {
+                
               }
             } else {
               alert(data.error || 'Login failed');
