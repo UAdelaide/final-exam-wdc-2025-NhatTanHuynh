@@ -31,5 +31,7 @@ app.use('/users', usersRouter);
 module.exports = app;
 
 app.get('/api/walkrequests/open', async (req, res) => {
-    
-})
+    try {
+        const query = ''
+    }
+});
