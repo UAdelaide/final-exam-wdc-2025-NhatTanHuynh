@@ -8,7 +8,8 @@ const db = mysql.createDb({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'DogWalkService'
+    database: 'DogWalkService',
+    waitForCon
 });
 
 const promiseDb = db.promise();
