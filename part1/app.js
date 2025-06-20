@@ -5,7 +5,9 @@ var logger = require('morgan');
 
 const mysql = require('mysql12');
 const db = mysql.createdb({
-    host: 'localhost';
+    host: 'localhost',
+    user: 'root',
+    password: 
 })
 
 var indexRouter = require('./routes/index');
