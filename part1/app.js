@@ -44,5 +44,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
 
 //Question7
 app.get('/api/walkrequests/open', async (req, res) => {
-    
+    try {
+
+    } catch (error) {
+        
+    }
 });
