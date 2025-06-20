@@ -14,7 +14,8 @@ const db = mysql.createDb({
     queueLimit: 0
 });
 
-const promiseDb
+const promiseDb = db.promise();
+module
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
