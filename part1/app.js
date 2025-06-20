@@ -57,9 +57,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
 //Question8
 app.get('/api/walkers/summary', async (req, res) => {
     try {
-        const query = '';
+        const query = 'SELECT ';
     } catch (error) {
         console.error("database error", error);
-        res.status(500)
+        res.status(500).json({ error: 'Failed to fetch walker summary' });
     }
 });
