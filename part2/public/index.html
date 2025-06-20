@@ -43,7 +43,9 @@
       },
       method: {
         async login(){
-          if(!this.username || !this.)
+          if(!this.username || !this.password) {
+            alert('Please enter username and password')
+          }
         }
       }
     }).mount('#app');
