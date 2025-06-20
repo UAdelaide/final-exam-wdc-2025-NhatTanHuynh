@@ -14,5 +14,7 @@ body {
   position:absolute;
   top: 500px;
   left: 700px;
-  transform: rotate();
+  transform: rotate(45deg);
+  font-size: 8px;
+  color: light;
 }
