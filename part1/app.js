@@ -8,10 +8,7 @@ const db = mysql.createDb({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'DogWalkService',
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
+    database: 'DogWalkService'
 });
 
 const promiseDb = db.promise();
@@ -33,4 +30,4 @@ app.use('/users', usersRouter);
 
 module.exports = app;
 
-app.get('')
+app.get('/api')
