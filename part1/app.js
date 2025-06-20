@@ -58,5 +58,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 app.get('/api/walkers/summary', async (req, res) => {
     try {
         const query = '';
+    } catch (error) {
+        console.error("data")
     }
 });
