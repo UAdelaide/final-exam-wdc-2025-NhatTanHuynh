@@ -56,6 +56,6 @@ router.post('/login', async (req, res) => {
 });
 
 // Post for select bar
-router.get(':/')
+router.get(':/id/dogs', async (req, res) => )
 
 module.exports = router;
