@@ -75,7 +75,7 @@
         async function applyToWalk(requestId) {
           try {
             if (!user.value) {
-              a
+              await getCurrentUser();
             }
 
             const res = await fetch(`/api/walks/${requestId}/apply`, {
