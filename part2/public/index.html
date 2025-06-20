@@ -22,7 +22,7 @@
       <button @click="Login" type="button">Login</button>
     </div>
 
-    <div >
+    <div v-if="LoggedIn">
       <h1 class="mb-4 text-primary">{{ message }}</h1>
       <p class="lead">Connect with trusted walkers for your beloved dog!</p>
 
