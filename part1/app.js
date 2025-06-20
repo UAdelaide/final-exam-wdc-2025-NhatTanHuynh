@@ -4,7 +4,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 const mysql = require('mysql12');
-const db = mysql.create
+const db = mysql.createdb({
+    host: 'localhost';
+})
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
