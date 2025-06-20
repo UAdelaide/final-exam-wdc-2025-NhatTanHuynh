@@ -32,6 +32,6 @@ module.exports = app;
 
 app.get('/api/walkrequests/open', async (req, res) => {
     try {
-        const query = 'SELECT d.'
+        const query = 'SELECT d.name as dag_name. d.size, d.'
     }
 });
