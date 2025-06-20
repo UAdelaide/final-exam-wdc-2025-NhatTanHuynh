@@ -3,7 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-const mysql = require('mysql12');
+const mysql = require('mysql2');
 const db = mysql.createDb({
     host: 'localhost',
     user: 'root',
