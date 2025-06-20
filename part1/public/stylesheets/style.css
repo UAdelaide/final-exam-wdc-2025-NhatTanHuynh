@@ -23,5 +23,8 @@ button {
   font-size:6px;
   background-color: cyan;
   color:white;
-  border:dashed 2px;
+  border:dashed 2px green;
+  padding: 5px;
+  margin: 10px;
 }
+
