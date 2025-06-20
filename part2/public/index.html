@@ -63,8 +63,8 @@
 
             const data = await response.json();
             if(response.ok) {
-              const 
-
+              const user = data.user;
+              local
               const role = data.user.role;
               if (role === 'owner') {
                 window.location.href = 'owner-dashboard.html';
