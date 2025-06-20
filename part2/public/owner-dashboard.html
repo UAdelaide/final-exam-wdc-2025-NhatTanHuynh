@@ -86,7 +86,9 @@
         const error = ref('');
         const user = JSON.parse(localStorage.getItem('user'));
 
-        if(!userId)
+        if(!userId || user.role != 'owner') {
+          
+        }
 
         async function loadWalks() {
           try {
