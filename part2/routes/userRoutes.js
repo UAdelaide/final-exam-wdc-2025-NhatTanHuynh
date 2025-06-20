@@ -59,7 +59,8 @@ router.post('/login', async (req, res) => {
 router.get(':/id/dogs', async (req, res) => {
   const ownerId = req.params.id;
   try {
-    const [results] = await db.query()
+    const [results] = await db.query('
+      SELECT dog_id, name')
   }
 });
 
