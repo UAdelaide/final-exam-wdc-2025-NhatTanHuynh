@@ -12,5 +12,7 @@ body {
 
 .dog-info {
   position:absolute;
-  top
+  top: 500px;
+  left: 700px;
+  transform: rotate();
 }
