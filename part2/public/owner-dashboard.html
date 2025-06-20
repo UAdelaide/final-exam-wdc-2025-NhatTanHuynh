@@ -84,7 +84,7 @@
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
-        const user = 
+        const user = JSON.parse(localStorage.getItem(user'))
 
         async function loadWalks() {
           try {
