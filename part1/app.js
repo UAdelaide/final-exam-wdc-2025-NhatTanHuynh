@@ -4,7 +4,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 const mysql = require('mysql2');
-const db = mysql.createDb({
+const db = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: '',
