@@ -56,7 +56,7 @@ router.post('/login', async (req, res) => {
 });
 
 // Post for select bar
-router.get('/:/id/dogs', async (req, res) => {
+router.get('/:id/dogs', async (req, res) => {
   const ownerId = req.params.id;
   try {
     const [results] = await db.query('SELECT dog_id, name FROM Dogs WHERE owner_id = ?', [ownerId]);
