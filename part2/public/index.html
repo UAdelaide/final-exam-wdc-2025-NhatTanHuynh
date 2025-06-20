@@ -66,6 +66,7 @@
 
             const data = await response.json();
             if(response.ok) {
+              const role = data.user.role;
               this.loggedIn = true;
               this.username = data.user.username;
               this.role = data.user.role;
