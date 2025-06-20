@@ -56,5 +56,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 
 //Question8
 app.get('/api/walkers/summary', async (req, res) => {
-    
+    try {
+        const query = '';
+    }
 });
