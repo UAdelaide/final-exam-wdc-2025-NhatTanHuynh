@@ -32,8 +32,7 @@ module.exports = app;
 
 app.get('/api/walkrequests/open', async (req, res) => {
     try {
-        const query = 'SELECT d.name as dag_name. d.size, u.username as owner_usernsme FROM Dogs dJOIN Users u ON d.owner_id = u.user_id
-            ORDER BY d.name;
-    ';
+        const query = 'SELECT d.name as dag_name. d.size, u.username as owner_usernsme FROM Dogs d JOIN Users u ON d.owner_id = u.user_id ORDER BY d.name';
+    
     }
 });
