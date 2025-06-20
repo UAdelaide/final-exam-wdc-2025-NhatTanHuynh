@@ -45,8 +45,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 //Question7
 app.get('/api/walkrequests/open', async (req, res) => {
     try {
-        const query = '
-        SELECT wr.request_id, d.name AS dog
+        const query = 'SELECT wr.request_id, d.name AS dog_name,
         ';
     } catch (error) {
 
