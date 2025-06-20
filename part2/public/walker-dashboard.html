@@ -52,7 +52,8 @@
             if (!res.ok) throw new Error('Not logged in');
             user.value = await res.json();
           } catch (err) {
-            err
+            error.value = err.message;
+            window.location.href = 'index.html'
           }
         }
 
