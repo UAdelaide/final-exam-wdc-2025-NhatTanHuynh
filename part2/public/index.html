@@ -38,10 +38,11 @@
     createApp({
       data() {
         return {
-          message: 'Welcome to the Dog Walking Service!'
+          message: 'Welcome to the Dog Walking Service!',
+          username: ''
         };
       },
-      method: {
+      methods: {
         async login(){
           if(!this.username || !this.password) {
             alert('Please enter username and password');
