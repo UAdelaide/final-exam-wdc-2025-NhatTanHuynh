@@ -62,7 +62,7 @@
 
             const data = await reponse.json();
             if(reponse.ok) {
-              thisloggeIn = true;
+              this.loggeIn = true;
               this.username = data.user.username;
               this.role = data.user.role;
             } else {
