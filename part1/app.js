@@ -15,7 +15,7 @@ const db = mysql.createDb({
 });
 
 const promiseDb = db.promise();
-module
+module.exports.promiseDb = promiseDb;
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
