@@ -89,6 +89,10 @@
           }
         }
 
+        function logout(){
+          window.location.href = 'index.html';
+        }
+
         async function submitWalkRequest() {
           try {
             const res = await fetch('/api/walks', {
@@ -124,7 +128,8 @@
           walks,
           message,
           error,
-          submitWalkRequest
+          submitWalkRequest,
+          logout
         };
       }
     }).mount('#app');
