@@ -59,6 +59,7 @@ app.get('/api/walkers/summary', async (req, res) => {
     try {
         const query = '';
     } catch (error) {
-        console.error("data")
+        console.error("database error", error);
+        res.status(500)
     }
 });
