@@ -16,5 +16,9 @@ body {
   left: 700px;
   transform: rotate(45deg);
   font-size: 8px;
-  color: light;
+  color: lightgray;
+}
+
+button {
+  
 }
