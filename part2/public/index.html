@@ -58,7 +58,10 @@
                 username: this.email,
                 password: this.password
               })
-            })
+            });
+
+            const data = await reponse.json();
+            
           }
         }
       }
