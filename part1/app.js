@@ -46,7 +46,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 app.get('/api/walkrequests/open', async (req, res) => {
     try {
         const query = '
-        
+        SELECT wr.request_id, 
         ';
     } catch (error) {
 
