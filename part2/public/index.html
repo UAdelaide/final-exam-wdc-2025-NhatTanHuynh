@@ -68,8 +68,9 @@
             } else {
               alert(data.error || 'Login failed');
             }
-          } catch (err)
-         }
+          } catch (err) {
+            alert('Error connecting to server')
+          }        }
       }
     }).mount('#app');
   </script>
