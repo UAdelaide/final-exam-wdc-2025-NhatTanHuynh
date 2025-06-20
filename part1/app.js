@@ -9,7 +9,8 @@ const db = mysql.createDb({
     user: 'root',
     password: '',
     database: 'DogWalkService',
-    waitForCon
+    waitForConnections: true,
+    connectionLimit:
 });
 
 const promiseDb = db.promise();
