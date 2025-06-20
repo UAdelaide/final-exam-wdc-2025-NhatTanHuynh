@@ -47,7 +47,7 @@
         const user = ref(null);
 
         async function getCurrentUser() {
-          
+
         }
 
         async function loadWalkRequests() {
@@ -61,6 +61,7 @@
         }
 
         function logout(){
+          localStorage.removeItem('user');
           window.location.href = 'index.html';
         }
 
