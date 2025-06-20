@@ -22,4 +22,6 @@ body {
 button {
   font-size:6px;
   background-color: cyan;
+  color:white;
+  border:dashed 2px;
 }
