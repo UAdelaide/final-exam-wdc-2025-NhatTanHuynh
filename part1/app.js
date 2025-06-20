@@ -55,4 +55,4 @@ app.get('/api/walkrequests/open', async (req, res) => {
 });
 
 //Question8
-app
+app.get('/api/walkers/summary', as)
