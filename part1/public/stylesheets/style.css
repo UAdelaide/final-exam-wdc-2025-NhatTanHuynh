@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(yellow,red,green);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   animation: flash 1s infinite;
 }
 
@@ -10,6 +10,4 @@ body {
   100% {background-color: green;}
 }
 
-a {
-  color: #00B7FF;
-}
+.go
