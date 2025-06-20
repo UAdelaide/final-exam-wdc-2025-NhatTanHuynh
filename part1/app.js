@@ -10,8 +10,9 @@ const db = mysql.createdb({
     password: '',
     database: 'DogWalkService',
     waitForConnections: true,
-    connectionLimi
-})
+    connectionLimit: 10,
+    queueLimit: 0
+});
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
