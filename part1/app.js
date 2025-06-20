@@ -10,7 +10,8 @@ const db = mysql.createDb({
     password: '',
     database: 'DogWalkService',
     waitForConnections: true,
-    connectionLimit:
+    connectionLimit: 10,
+    queueLimit: 0
 });
 
 const promiseDb = db.promise();
