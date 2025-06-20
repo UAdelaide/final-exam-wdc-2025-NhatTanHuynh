@@ -7,7 +7,8 @@ const mysql = require('mysql12');
 const db = mysql.createdb({
     host: 'localhost',
     user: 'root',
-    password: 
+    password: '',
+    database: 'DogWalk'
 })
 
 var indexRouter = require('./routes/index');
