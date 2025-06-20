@@ -57,7 +57,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 //Question8
 app.get('/api/walkers/summary', async (req, res) => {
     try {
-        const query = 'SELECT u.user_id walker_username, COUNT (r.reating) AS total_ratings, AVG(r.rating) AS average_rating,COUNT (CASE WHEN wr.status = "accepted" AND wr.status = "completed" THEN 1 END) AS completed_walks FROM Users u LEFT JOIN WalkApplicatios wa ON u.user_id = wa.walker_id AND wa.status = "accpected" LEFT JOIN WalkRequests wr ON wa.request_id = wr.request_id LEFT JOIN Walk';
+        const query = 'SELECT u.user_id walker_username, COUNT (r.reating) AS total_ratings, AVG(r.rating) AS average_rating,COUNT (CASE WHEN wr.status = "accepted" AND wr.status = "completed" THEN 1 END) AS completed_walks FROM Users u LEFT JOIN WalkApplicatios wa ON u.user_id = wa.walker_id AND wa.status = "accpected" LEFT JOIN WalkRequests wr ON wa.request_id = wr.request_id LEFT JOIN WalkRating r ON wr.request_id = ';
     } catch (error) {
         console.error("database error", error);
         res.status(500).json({ error: 'Failed to fetch walker summary' });
