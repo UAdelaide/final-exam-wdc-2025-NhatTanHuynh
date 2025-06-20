@@ -30,4 +30,4 @@ app.use('/users', usersRouter);
 
 module.exports = app;
 
-app.get('/api')
+app.get('/api/walk')
