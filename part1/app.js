@@ -36,6 +36,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
         const [rows] = await promiseDb.query(query);
         res.json(rows);
     } catch (error) {
-        console.error('')
+        console.error('Error fetching open walk requests:', error);
+        res.status(500).json({ error: 'Failed to fetch open walk requests' });
     }
 });
