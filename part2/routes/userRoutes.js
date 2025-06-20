@@ -55,6 +55,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// Post for 
+// Post for select bar
+router.get(':/')
 
 module.exports = router;
